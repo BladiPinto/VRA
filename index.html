@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cursos y Capacitaciones</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="logo">
+          <img src="/images/LogoDGA.png" alt="Logo de tu sitio web">
+          <a href="#">DIRECCIÓN DE GESTIÓN ACADÉMICA</a>
+        </div>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Certificados</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    <div class="formulario">
+        <h2>BUSQUEDA DE CERTIFICADOS</h2>
+        <!-- Formulario -->
+        <form action="tabla.php" method="post">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" placeholder="Ingrese su DNI" required="true">
+            <input type="submit" value="Buscar">
+        </form>
+        
+    </div>
+    <div id="tabla-container">
+        <div id="tabla"></div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>Vicerrectorado Académico - UNAP <br> Dirección de Gestión Académica © 2023</p>
+    </footer>
+</body>
+</html>
