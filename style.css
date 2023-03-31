@@ -30,7 +30,7 @@ nav {
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
   }
   
   ul {
@@ -87,7 +87,7 @@ input[type="text"] {
     font-size: 16px;
 }
 
-input[type="submit"] {
+input[type="button"] {
     background-color: #008080;
     color: #fff;
     padding: 10px;
@@ -100,13 +100,16 @@ input[type="submit"] {
     margin: 12px 0px 0px 343px;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
     background-color: #005959;
     transform: scale(1.1);
 }
 /* Estilos para la tabla */
+#tabla_certificados {
+  display: none;
+}
 
-#tabla-container {
+#tabla_certificados {
   max-width: 900px;
   margin: 0 auto; /* Para centrar el contenedor horizontalmente */
 }
@@ -140,13 +143,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: #000000;
     padding: 20px;
     text-align: center;
     font-size: 16px;
-    border-top: 1px solid #000000;
+    border-top: 5px solid #008080;
 }
 
 footer p {
     margin: 0;
+    color: #f8f8f8;
 }

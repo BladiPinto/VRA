@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Cursos y Capacitaciones</title>
-    <script src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="buscar_certificado.js"></script>
 </head>
 <body>
     <!-- Barra de navegación -->
     <nav>
         <div class="logo">
-          <img src="/images/LogoDGA.png" alt="Logo de tu sitio web">
+          <img src="images/LogoDGA.png" alt="Logo de tu sitio web">
           <a href="#">DIRECCIÓN DE GESTIÓN ACADÉMICA</a>
         </div>
         <ul>
@@ -21,20 +22,27 @@
           <li><a href="#">Contacto</a></li>
         </ul>
       </nav>
-    <div class="formulario">
-        <h2>BUSQUEDA DE CERTIFICADOS</h2>
-        <!-- Formulario -->
-        <form action="tabla.php" method="post">
-            <label for="dni">DNI:</label>
-            <input type="text" id="dni" name="dni" placeholder="Ingrese su DNI" required="true">
-            <input type="submit" value="Buscar">
-        </form>
-        
-    </div>
-    <div id="tabla-container">
-        <div id="tabla"></div>
-    </div>
-    <!-- Footer -->
+      <h2>CURSO TALLER PLANIFICACION CURRICULAR Y EVALUACION DEL APRENDIZAJE UNIVERSITARIO</h2>
+      <h2>BUSQUEDA DE CERTIFICADOS</h2>
+	<form>
+		<label for="dni">DNI:</label>
+		<input type="text" id="dni" name="dni" placeholder="Ingrese su DNI" required="true" >
+		<input type="button" value="Buscar" onclick="buscarCertificado()">
+	</form>
+	<table id="tabla_certificados">
+		<thead>
+			<tr>
+				<th>DNI</th>
+				<th>Nombres</th>
+				<th>Apellidos</th>
+				<th>Certificado</th>
+				<th>Fecha de Emisión</th>
+				<th>Código</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
     <footer>
         <p>Vicerrectorado Académico - UNAP <br> Dirección de Gestión Académica © 2023</p>
     </footer>
